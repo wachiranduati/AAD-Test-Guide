@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/testGuidelinesRecycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="very first fragment/screen" />
+        tools:listitem="@layout/test_guidline_recycler_items" />
 
 </FrameLayout>
