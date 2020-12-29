@@ -14,8 +14,8 @@ The repo will focus on the following topics:
 This will focus on the following sections:
 - Understand the architecture of the Android system
 - Be able to describe the basic building blocks of an Android app
-- Know how to build and run an Android app
-- Display simple messages in a popup using a Toast or a Snackbar
+[x] Know how to build and run an Android app
+[x] Display simple messages in a popup using a Toast or a Snackbar
 - Be able to display a message outside your app's UI using Notifications
 - Understand how to localize an app
 - Be able to schedule a background task using WorkManager
@@ -23,7 +23,7 @@ This will focus on the following sections:
 ### 2. User Interface
 Focusing on:
 - Understand the Android activity lifecycle
-- Be able to create an Activity that displays a Layout
+[x] Be able to create an Activity that displays a Layout
 [x] Be able to construct a UI with ConstraintLayout
 - Understand how to create a custom View class and add it to a Layout
 - Know how to implement a custom app theme
