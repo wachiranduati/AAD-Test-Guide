@@ -14,6 +14,10 @@ The repo will focus on the following topics:
 This will focus on the following sections:
 - [x] Understand the architecture of the Android system
 - [] Be able to describe the basic building blocks of an Android app
+        - [x] Activities
+        - [] Services
+        - [] BroadCast Receivers
+        - [] Content Providers
 - [x] Know how to build and run an Android app
 - [x] Display simple messages in a popup using a Toast or a Snackbar
 - Be able to display a message outside your app's UI using Notifications
