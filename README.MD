@@ -15,7 +15,7 @@ This will focus on the following sections:
 - [x] Understand the architecture of the Android system
 - [] Be able to describe the basic building blocks of an Android app
         - [x] Activities
-        - [] Services
+        - [x] Services
         - [] BroadCast Receivers
         - [] Content Providers
 - [x] Know how to build and run an Android app

@@ -9,5 +9,14 @@
         android:id="@+id/homeFragment"
         android:name="com.nduati.aadtestguide.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_androidCoreFragment"
+            app:destination="@id/androidCoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/androidCoreFragment"
+        android:name="com.nduati.aadtestguide.AndroidCoreFragment"
+        android:label="Android Core"
+        tools:layout="@layout/fragment_android_core" />
 </navigation>
