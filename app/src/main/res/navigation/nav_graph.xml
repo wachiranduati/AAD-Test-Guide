@@ -18,5 +18,14 @@
         android:id="@+id/androidCoreFragment"
         android:name="com.nduati.aadtestguide.AndroidCoreFragment"
         android:label="Android Core"
-        tools:layout="@layout/fragment_android_core" />
+        tools:layout="@layout/fragment_android_core" >
+        <action
+            android:id="@+id/action_androidCoreFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.nduati.aadtestguide.ServicesFragment"
+        android:label="Services (Bound n Started)"
+        tools:layout="@layout/fragment_services" />
 </navigation>
