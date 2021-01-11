@@ -21,7 +21,6 @@ class AndroidCoreFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         NavToServices = view.findViewById(R.id.ServicesButton)
         NavToServices.setOnClickListener {
-//            Toast.makeText(view.context, "I've been clicked", Toast.LENGTH_SHORT).show()
             view.findNavController().navigate(R.id.action_androidCoreFragment_to_servicesFragment)
         }
     }

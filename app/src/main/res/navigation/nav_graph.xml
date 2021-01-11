@@ -25,7 +25,6 @@
     </fragment>
     <fragment
         android:id="@+id/servicesFragment"
-        android:name="com.nduati.aadtestguide.ServicesFragment"
-        android:label="Services (Bound n Started)"
-        tools:layout="@layout/fragment_services" />
+        android:name="com.nduati.aadtestguide.services.ServicesFragment"
+        android:label="ServicesFragment" />
 </navigation>
