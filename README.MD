@@ -20,7 +20,7 @@ This will focus on the following sections:
         - [] Content Providers
 - [x] Know how to build and run an Android app
 - [x] Display simple messages in a popup using a Toast or a Snackbar
-- Be able to display a message outside your app's UI using Notifications
+- [x] Be able to display a message outside your app's UI using Notifications
 - Understand how to localize an app
 - Be able to schedule a background task using WorkManager
 
