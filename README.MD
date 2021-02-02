@@ -16,6 +16,9 @@ This will focus on the following sections:
 - [] Be able to describe the basic building blocks of an Android app
         - [x] Activities
         - [x] Services
+                    - [x] foreground services
+                    - [] background services
+                    - [] bound services
         - [] BroadCast Receivers
         - [] Content Providers
 - [x] Know how to build and run an Android app
