@@ -1,13 +1,15 @@
 package com.nduati.aadtestguide.services
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.nduati.aadtestguide.R
 import kotlinx.android.synthetic.main.fragment_services.view.*
+
 
 class ServicesFragment : Fragment(), View.OnClickListener {
     lateinit var root : View
@@ -24,6 +26,8 @@ class ServicesFragment : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
         root.StartServiceButton.setOnClickListener(this)
         root.StopServiceButton.setOnClickListener(this)
+        root.startBGServiceBtn.setOnClickListener(this)
+        root.stopBGServiceBtn.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -35,6 +39,12 @@ class ServicesFragment : Fragment(), View.OnClickListener {
             R.id.StopServiceButton -> {
                 Toast.makeText(activity, "stop service", Toast.LENGTH_SHORT).show()
                 ForegroundService.stopService(v.context)
+            }
+            R.id.startBGServiceBtn -> {
+                v.context.startService(Intent(v.context, BackgroundService::class.java))
+            }
+            R.id.stopBGServiceBtn -> {
+                v.context.stopService(Intent(v.context, BackgroundService::class.java))
             }
         }
     }

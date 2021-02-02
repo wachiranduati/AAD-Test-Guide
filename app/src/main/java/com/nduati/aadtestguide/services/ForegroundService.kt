@@ -12,7 +12,6 @@ import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import com.nduati.aadtestguide.MainActivity
 import com.nduati.aadtestguide.R
-import com.nduati.aadtestguide.util.SampleActivity
 
 class ForegroundService : Service() {
     private val CHANNEL_ID = "foreground_service"

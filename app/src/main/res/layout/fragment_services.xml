@@ -90,7 +90,7 @@
         app:layout_constraintVertical_bias="0.18" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/startBGServiceBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start Service"
@@ -101,13 +101,13 @@
         app:layout_constraintVertical_bias="0.16000003" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/stopBGServiceBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Stop Service"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/startBGServiceBtn"
         app:layout_constraintVertical_bias="0.25" />
 </androidx.constraintlayout.widget.ConstraintLayout>
