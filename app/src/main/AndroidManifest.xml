@@ -13,8 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AADTestGuide">
         <service
+            android:name=".services.boundservice.BoundServiceBinder"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
             android:name=".services.BackgroundService"
-            android:exported="false"></service>
+            android:exported="false" />
 
         <activity android:name=".util.SampleActivity" />
 

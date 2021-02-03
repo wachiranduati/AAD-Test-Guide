@@ -17,8 +17,11 @@ This will focus on the following sections:
         - [x] Activities
         - [x] Services
                     - [x] foreground services
-                    - [] background services
+                    - [x] background services
                     - [] bound services
+                            - [] Binder
+                            - [] Messenger
+                            - [] AIDL
         - [] BroadCast Receivers
         - [] Content Providers
 - [x] Know how to build and run an Android app

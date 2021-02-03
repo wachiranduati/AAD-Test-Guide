@@ -26,5 +26,14 @@
     <fragment
         android:id="@+id/servicesFragment"
         android:name="com.nduati.aadtestguide.services.ServicesFragment"
-        android:label="ServicesFragment" />
+        android:label="ServicesFragment" >
+        <action
+            android:id="@+id/action_servicesFragment_to_bindServiceFragment"
+            app:destination="@id/bindServiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bindServiceFragment"
+        android:name="com.nduati.aadtestguide.services.BindServiceFragment"
+        android:label="Bound Services"
+        tools:layout="@layout/fragment_bind_service" />
 </navigation>
