@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_homeFragment_to_androidCoreFragment"
             app:destination="@id/androidCoreFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
     </fragment>
     <fragment
         android:id="@+id/androidCoreFragment"
@@ -22,6 +25,9 @@
         <action
             android:id="@+id/action_androidCoreFragment_to_servicesFragment"
             app:destination="@id/servicesFragment" />
+        <action
+            android:id="@+id/action_androidCoreFragment_to_contentReceiverFragment"
+            app:destination="@id/contentProviderFragment" />
     </fragment>
     <fragment
         android:id="@+id/servicesFragment"
@@ -36,4 +42,14 @@
         android:name="com.nduati.aadtestguide.services.BindServiceFragment"
         android:label="Bound Services"
         tools:layout="@layout/fragment_bind_service" />
+    <fragment
+        android:id="@+id/contentProviderFragment"
+        android:name="com.nduati.aadtestguide.ContentProviderFragment"
+        android:label="Content Provider"
+        tools:layout="@layout/fragment_content_receiver" />
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.nduati.aadtestguide.NotesFragment"
+        android:label="Fragment Notes"
+        tools:layout="@layout/fragment_notes" />
 </navigation>

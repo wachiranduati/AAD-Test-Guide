@@ -19,7 +19,7 @@ This will focus on the following sections:
                     - [x] foreground services
                     - [x] background services
                     - [] bound services
-                            - [] Binder
+                            - [x] Binder
                             - [] Messenger
                             - [] AIDL
         - [] BroadCast Receivers

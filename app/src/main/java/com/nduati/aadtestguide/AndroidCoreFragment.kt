@@ -20,6 +20,7 @@ import androidx.navigation.findNavController
 class AndroidCoreFragment : Fragment() {
     lateinit var NavToServices : Button
     lateinit var notificationBtn : Button
+    lateinit var contentRcvBtn : Button
     lateinit var root : View
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -41,6 +42,13 @@ class AndroidCoreFragment : Fragment() {
             Toast.makeText(view.context, "show notification", Toast.LENGTH_SHORT).show()
             createNotificationChannel()
         }
+
+        contentRcvBtn = view.findViewById(R.id.contentReceiverButton)
+        contentRcvBtn.setOnClickListener {
+            it.findNavController().navigate(R.id.action_androidCoreFragment_to_contentReceiverFragment)
+        }
+
+
     }
 
     private fun createNotificationChannel() {
