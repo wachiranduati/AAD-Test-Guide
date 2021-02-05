@@ -9,7 +9,5 @@ data class Notes (
     @ColumnInfo()
     @PrimaryKey(autoGenerate = true)
     val id : Int,
-    @ColumnInfo()
     val header : String,
-    @ColumnInfo()
     val desc : String)
