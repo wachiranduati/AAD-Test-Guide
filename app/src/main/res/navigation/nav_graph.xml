@@ -51,5 +51,22 @@
         android:id="@+id/notesFragment"
         android:name="com.nduati.aadtestguide.NotesFragment"
         android:label="Fragment Notes"
-        tools:layout="@layout/fragment_notes" />
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_createNotesFragment"
+            app:destination="@id/createNotesFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_editNotesFragment"
+            app:destination="@id/editNotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNotesFragment"
+        android:name="com.nduati.aadtestguide.CreateNotesFragment"
+        android:label="fragment_create_notes"
+        tools:layout="@layout/fragment_create_notes" />
+    <fragment
+        android:id="@+id/editNotesFragment"
+        android:name="com.nduati.aadtestguide.EditNotesFragment"
+        android:label="fragment_edit_notes"
+        tools:layout="@layout/fragment_edit_notes" />
 </navigation>

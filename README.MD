@@ -46,7 +46,7 @@ Focusing on:
 
 ### 3. Data Management
 Focusing on:
-- Understand how to define data using Room entities
+- [x] Understand how to define data using Room entities
 - Be able to access Room database with data access object (DAO)
 - Know how to observe and respond to changing data using LiveData
 - Understand how to use a Repository to mediate data operations
