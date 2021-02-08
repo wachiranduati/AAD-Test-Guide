@@ -68,5 +68,10 @@
         android:id="@+id/editNotesFragment"
         android:name="com.nduati.aadtestguide.EditNotesFragment"
         android:label="fragment_edit_notes"
-        tools:layout="@layout/fragment_edit_notes" />
+        tools:layout="@layout/fragment_edit_notes" >
+        <argument
+            android:name="noteId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
 </navigation>

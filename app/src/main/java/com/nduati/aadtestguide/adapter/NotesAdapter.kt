@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.nduati.aadtestguide.R
@@ -30,7 +31,8 @@ class NotesAdapter(val notes : List<Notes>) : RecyclerView.Adapter<NotesAdapter.
         holder.noteHeader.text = notes[position].header
         holder.noteDescription.text = notes[position].desc
         holder.container.setOnClickListener {
-            it.findNavController().navigate(R.id.action_notesFragment_to_editNotesFragment)
+            val bundle = bundleOf("noteId" to position)
+            it.findNavController().navigate(R.id.action_notesFragment_to_editNotesFragment, bundle)
         }
     }
 
