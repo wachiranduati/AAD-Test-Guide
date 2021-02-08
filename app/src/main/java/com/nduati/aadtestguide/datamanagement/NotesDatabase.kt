@@ -42,14 +42,21 @@ abstract class NotesDatabase() : RoomDatabase() {
             INSTANCE.let { database ->
                 scope.launch {
                     if (database != null) {
-//                        populateDialect(database.notesDao())
+                        populateDialect(database.notesDao())
                     }
                 }
             }
         }
 
-//        suspend fun populateDialect(notesDao: NotesDao) {
-//        }
+        suspend fun populateDialect(notesDao: NotesDao) {
+            notesDao.addNote(Notes(1, "first header", "first description"))
+            notesDao.addNote(Notes(2, "second header", "second description"))
+            notesDao.addNote(Notes(3, "third header", "third description"))
+            notesDao.addNote(Notes(4, "fourth header", "fourth description"))
+            notesDao.addNote(Notes(5, "fifth header", "fifth description"))
+            notesDao.addNote(Notes(6, "sixth header", "sixth description"))
+            notesDao.addNote(Notes(7, "seventh header", "seventh description"))
+        }
 
 
     }

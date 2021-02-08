@@ -11,7 +11,7 @@ import com.nduati.aadtestguide.R
 import com.nduati.aadtestguide.models.Notes
 import kotlinx.android.synthetic.main.notes_list_item.view.*
 
-class NotesAdapter(val notes : ArrayList<Notes>) : RecyclerView.Adapter<NotesAdapter.NotesHolder>() {
+class NotesAdapter(val notes : List<Notes>) : RecyclerView.Adapter<NotesAdapter.NotesHolder>() {
 
     class NotesHolder(view : View): RecyclerView.ViewHolder(view){
         val notedID : TextView = view.notedId

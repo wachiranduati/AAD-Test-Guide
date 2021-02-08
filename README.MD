@@ -48,8 +48,8 @@ Focusing on:
 Focusing on:
 - [x] Understand how to define data using Room entities
 - [x] Be able to access Room database with data access object (DAO)
-- Know how to observe and respond to changing data using LiveData
-- Understand how to use a Repository to mediate data operations
+- [x] Know how to observe and respond to changing data using LiveData
+- [x] Understand how to use a Repository to mediate data operations
 - Be able to read and parse raw resources or asset files
 - Be able to create persistent Preference data from user input
 - Understand how to change the behavior of the app based on user preferences
