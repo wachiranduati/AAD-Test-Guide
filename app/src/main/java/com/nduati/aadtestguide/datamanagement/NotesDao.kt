@@ -1,5 +1,6 @@
 package com.nduati.aadtestguide.datamanagement
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.nduati.aadtestguide.models.Notes
 
@@ -12,9 +13,9 @@ interface NotesDao {
     suspend fun updateNote(notes: Notes)
 
     @Query("SELECT * FROM notes_table ORDER BY id")
-    fun readAll()
+    fun readAll() : LiveData<List<Notes>>
 
     @Query("DELETE FROM notes_table WHERE id = :id")
-    fun deleteByID(id : Int)
+    suspend fun deleteByID(id : Int)
 
 }
