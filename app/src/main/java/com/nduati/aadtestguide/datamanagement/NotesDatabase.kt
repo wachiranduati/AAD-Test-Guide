@@ -49,13 +49,13 @@ abstract class NotesDatabase() : RoomDatabase() {
         }
 
         suspend fun populateDialect(notesDao: NotesDao) {
-            notesDao.addNote(Notes(1, "first header", "first description"))
-            notesDao.addNote(Notes(2, "second header", "second description"))
-            notesDao.addNote(Notes(3, "third header", "third description"))
-            notesDao.addNote(Notes(4, "fourth header", "fourth description"))
-            notesDao.addNote(Notes(5, "fifth header", "fifth description"))
-            notesDao.addNote(Notes(6, "sixth header", "sixth description"))
-            notesDao.addNote(Notes(7, "seventh header", "seventh description"))
+            notesDao.addNote(Notes( "first header", "first description"))
+            notesDao.addNote(Notes( "second header", "second description"))
+            notesDao.addNote(Notes( "third header", "third description"))
+            notesDao.addNote(Notes( "fourth header", "fourth description"))
+            notesDao.addNote(Notes( "fifth header", "fifth description"))
+            notesDao.addNote(Notes( "sixth header", "sixth description"))
+            notesDao.addNote(Notes( "seventh header", "seventh description"))
         }
 
 
