@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.nduati.aadtestguide.datamanagement.NoteViewModel
 import com.nduati.aadtestguide.models.Notes
@@ -30,11 +31,16 @@ class EditNotesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.updateNoteButton.setOnClickListener {
+            Toast.makeText(it.context, "note updated", Toast.LENGTH_SHORT).show()
             var header = view.updateHeaderEditText.text.toString()
             var desc = view.updateDescriptionEditText.text.toString()
             val nuNot = Notes(header, desc)
             nuNot.id = noteid
             notesViewModel.updateNote(nuNot)
+        }
+        view.deleteNoteButton.setOnClickListener {
+            Toast.makeText(it.context, "note deleted", Toast.LENGTH_SHORT).show()
+            notesViewModel.deleteById(noteid)
         }
     }
     
