@@ -31,7 +31,7 @@ class NotesAdapter(val notes : List<Notes>) : RecyclerView.Adapter<NotesAdapter.
         holder.noteHeader.text = notes[position].header
         holder.noteDescription.text = notes[position].desc
         holder.container.setOnClickListener {
-            val bundle = bundleOf("noteId" to position)
+            val bundle = bundleOf("noteId" to notes[position].id)
             it.findNavController().navigate(R.id.action_notesFragment_to_editNotesFragment, bundle)
         }
     }
