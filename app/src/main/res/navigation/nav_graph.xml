@@ -58,6 +58,9 @@
         <action
             android:id="@+id/action_notesFragment_to_editNotesFragment"
             app:destination="@id/editNotesFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_userInputFragment"
+            app:destination="@id/userInputFragment" />
     </fragment>
     <fragment
         android:id="@+id/createNotesFragment"
@@ -74,4 +77,9 @@
             app:argType="integer"
             android:defaultValue="0" />
     </fragment>
+    <fragment
+        android:id="@+id/userInputFragment"
+        android:name="com.nduati.aadtestguide.datamanagement.UserInputFragment"
+        android:label="fragment_user_input"
+        tools:layout="@layout/fragment_user_input" />
 </navigation>
