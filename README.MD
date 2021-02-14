@@ -52,8 +52,10 @@ Focusing on:
 - [x] Understand how to use a Repository to mediate data operations
 - Be able to read and parse raw resources or asset files
 - Be able to create persistent Preference data from user input
-    - shared preferences
+    - [x] shared preferences
     - data store
+        - Preferences DataStore
+        - Proto DataStore
 - Understand how to change the behavior of the app based on user preferences
 
 ### 4. Debugging
