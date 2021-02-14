@@ -7,8 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.datastore.core.DataStore
+import androidx.datastore.createDataStore
 import com.nduati.aadtestguide.R
 import kotlinx.android.synthetic.main.fragment_user_input.view.*
+import java.util.prefs.Preferences
 
 class UserInputFragment : Fragment() {
 
@@ -25,6 +28,15 @@ class UserInputFragment : Fragment() {
             Toast.makeText(view.context, "saved to sharepref", Toast.LENGTH_SHORT).show()
             writeToSharedPref(view.userInputText.text.toString())
         }
+        view.savePrefDataStoreBtn.setOnClickListener {
+            Toast.makeText(it.context, "saved to preference datastore", Toast.LENGTH_SHORT).show()
+            val protData = view.dataStoreEditText.text.toString()
+            saveToPreferenceDataStore(protData, it)
+        }
+    }
+
+    private fun saveToPreferenceDataStore(protData: String, view: View) {
+
     }
 
     private fun readfromSharedPref(view: View) {
