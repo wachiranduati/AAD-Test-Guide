@@ -38,7 +38,7 @@ Focusing on:
 - Understand how to create a custom View class and add it to a Layout
 - Know how to implement a custom app theme
 - Be able to add accessibility hooks to a custom View
-- Know how to apply content descriptions to views for accessibility
+- [x] Know how to apply content descriptions to views for accessibility
 - [x] Understand how to display items in a RecyclerView
 - Be able to bind local data to a RecyclerView list using the Paging library
 - Know how to implement menu-based navigation

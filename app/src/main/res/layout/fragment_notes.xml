@@ -35,6 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:clickable="true"
+        android:importantForAccessibility="yes"
         android:src="@drawable/ic_user_input"
         app:layout_constraintBottom_toTopOf="@+id/takeMeToCreateNotes"
         app:layout_constraintEnd_toEndOf="@+id/takeMeToCreateNotes"
