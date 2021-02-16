@@ -2,4 +2,5 @@
     <string name="app_name">AAD Test Guide</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="update_note">Update Note</string>
+    <string name="hello_blank_fragment">blank fragment</string>
 </resources>

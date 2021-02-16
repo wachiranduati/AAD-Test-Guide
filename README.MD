@@ -28,7 +28,7 @@ This will focus on the following sections:
 - [x] Display simple messages in a popup using a Toast or a Snackbar
 - [x] Be able to display a message outside your app's UI using Notifications
 - [x] Understand how to localize an app
-- Be able to schedule a background task using WorkManager
+- [x] Be able to schedule a background task using WorkManager
 
 ### 2. User Interface
 Focusing on:

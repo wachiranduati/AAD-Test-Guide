@@ -7,6 +7,12 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.work.Constraints
+import androidx.work.NetworkType
+import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.WorkManager
+import com.nduati.aadtestguide.util.ToastWorker
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
     private lateinit var navController : NavController
@@ -17,6 +23,14 @@ class MainActivity : AppCompatActivity() {
         navController = findNavController(R.id.nav_host_fragment)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
+        scheduleToastOnWorkManager()
+    }
+
+    private fun scheduleToastOnWorkManager() {
+        val uploadWorkRequest = OneTimeWorkRequestBuilder<ToastWorker>()
+                .setInitialDelay(2, TimeUnit.MILLISECONDS)
+                .build()
+        WorkManager.getInstance(this).enqueue(uploadWorkRequest)
     }
 
     override fun onSupportNavigateUp(): Boolean {
