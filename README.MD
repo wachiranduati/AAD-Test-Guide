@@ -27,7 +27,7 @@ This will focus on the following sections:
 - [x] Know how to build and run an Android app
 - [x] Display simple messages in a popup using a Toast or a Snackbar
 - [x] Be able to display a message outside your app's UI using Notifications
-- Understand how to localize an app
+- [x] Understand how to localize an app
 - Be able to schedule a background task using WorkManager
 
 ### 2. User Interface
