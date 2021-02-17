@@ -60,11 +60,11 @@ Focusing on:
 
 ### 4. Debugging
 Focusing on:
-- Understand the basic debugging techniques available in Android Studio
-- Know how to debug and fix issues with an app's functional behavior and usability
-- Be able to use the System Log to output debug information
-- Understand how to use breakpoints in Android Studio
-- Know how to inspect variables using Android Studio
+- [x] Understand the basic debugging techniques available in Android Studio
+- [x] Know how to debug and fix issues with an app's functional behavior and usability
+- [x] Be able to use the System Log to output debug information
+- [x] Understand how to use breakpoints in Android Studio
+- [x] Know how to inspect variables using Android Studio
 
 ### 5. Testing
 Focusing on:
