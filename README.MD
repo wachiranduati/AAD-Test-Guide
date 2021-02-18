@@ -68,7 +68,7 @@ Focusing on:
 
 ### 5. Testing
 Focusing on:
-- Thoroughly understand the fundamentals of testing
+- [x] Thoroughly understand the fundamentals of testing
 - Be able to write useful local JUnit tests
 - Understand the Espresso UI test framework
 - Know how to write useful automated Android tests
