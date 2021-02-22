@@ -32,7 +32,7 @@ This will focus on the following sections:
 
 ### 2. User Interface
 Focusing on:
-- Understand the Android activity lifecycle
+- [x] Understand the Android activity lifecycle
 - [x] Be able to create an Activity that displays a Layout
 - [x] Be able to construct a UI with ConstraintLayout
 - Understand how to create a custom View class and add it to a Layout
@@ -72,6 +72,6 @@ Focusing on:
 ### 5. Testing
 Focusing on:
 - [x] Thoroughly understand the fundamentals of testing
-- Be able to write useful local JUnit tests
+- [x] Be able to write useful local JUnit tests
 - Understand the Espresso UI test framework
 - Know how to write useful automated Android tests
