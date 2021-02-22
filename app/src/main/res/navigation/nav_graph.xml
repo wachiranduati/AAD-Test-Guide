@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_androidCoreFragment_to_contentReceiverFragment"
             app:destination="@id/contentProviderFragment" />
+        <action
+            android:id="@+id/action_androidCoreFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/servicesFragment"
@@ -90,4 +93,9 @@
         android:name="com.nduati.aadtestguide.debug.DebugFragment"
         android:label="fragment_debug"
         tools:layout="@layout/fragment_debug" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.nduati.aadtestguide.menus.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
 </navigation>

@@ -42,6 +42,9 @@ Focusing on:
 - [x] Understand how to display items in a RecyclerView
 - Be able to bind local data to a RecyclerView list using the Paging library
 - Know how to implement menu-based navigation
+    - [x] Option Menu
+    - Contextual Menu
+    - Popup Menu
 - Understand how to implement drawer navigation
 
 ### 3. Data Management

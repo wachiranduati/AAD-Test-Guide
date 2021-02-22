@@ -21,6 +21,7 @@ class AndroidCoreFragment : Fragment() {
     lateinit var NavToServices : Button
     lateinit var notificationBtn : Button
     lateinit var contentRcvBtn : Button
+    lateinit var menuBtn : Button
     lateinit var root : View
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -48,6 +49,10 @@ class AndroidCoreFragment : Fragment() {
             it.findNavController().navigate(R.id.action_androidCoreFragment_to_contentReceiverFragment)
         }
 
+        menuBtn = view.findViewById(R.id.menuButton)
+        menuBtn.setOnClickListener {
+            it.findNavController().navigate(R.id.action_androidCoreFragment_to_menuFragment)
+        }
 
     }
 
