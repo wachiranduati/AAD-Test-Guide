@@ -43,7 +43,7 @@ Focusing on:
 - Be able to bind local data to a RecyclerView list using the Paging library
 - Know how to implement menu-based navigation
     - [x] Option Menu
-    - Contextual Menu
+    - [x] Contextual Menu
     - Popup Menu
 - Understand how to implement drawer navigation
 
