@@ -45,7 +45,7 @@ Focusing on:
     - [x] Option Menu
     - [x] Contextual Menu
     - [x] Popup Menu
-- Understand how to implement drawer navigation
+- [x] Understand how to implement drawer navigation
 
 ### 3. Data Management
 Focusing on:
