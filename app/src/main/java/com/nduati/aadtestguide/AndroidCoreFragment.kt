@@ -22,6 +22,7 @@ class AndroidCoreFragment : Fragment() {
     lateinit var notificationBtn : Button
     lateinit var contentRcvBtn : Button
     lateinit var menuBtn : Button
+    lateinit var pagingBtn : Button
     lateinit var root : View
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -53,6 +54,12 @@ class AndroidCoreFragment : Fragment() {
         menuBtn.setOnClickListener {
             it.findNavController().navigate(R.id.action_androidCoreFragment_to_menuFragment)
         }
+
+        pagingBtn = view.findViewById(R.id.pagingLibButton)
+        pagingBtn.setOnClickListener {
+            it.findNavController().navigate(R.id.action_androidCoreFragment_to_pagingFragment)
+        }
+
 
     }
 

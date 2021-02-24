@@ -4,6 +4,7 @@
 
     <!-- // apps targeting api 9 and use foreground services must request permission...normal permission> -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
